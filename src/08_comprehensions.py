@@ -30,7 +30,7 @@ print(y)
 # elements in array a. Hint: "foo".upper() is "FOO".
 
 a = ["foo", "bar", "baz"]
-y = [word.upper() for word in a]
+y = [ word.upper() for word in a ]
 
 print(y)
 
