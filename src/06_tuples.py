@@ -33,12 +33,23 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 
 
 # Write a function `print_tuple` that prints all the values in a tuple
-
 # YOUR CODE HERE
 
 t = (1, 2, 5, 7, 99)
+
+def print_tuple(t):
+    for num in t:
+        print(num)
+
+
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
+
+
+# Whenever we have a 1 element tuple, considering there is only 1 element and then parenthesis, python ignores the parenthesis and 
+#  does not consider it a tuple.
+# So we have to add a comma at the end of the one element tuple so that the parenthesis are not ignored.
+
 print_tuple(u)
