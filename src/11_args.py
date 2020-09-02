@@ -43,11 +43,8 @@ a = [7, 6, 5, 4]
 
 # YOUR CODE HERE
 
-def f3(num1, num2):
-    if num2 == None:
-        return num2 == 1
-    else:
-        return num1 + num2
+def f3(num1, num2 = 1):
+    return num1 + num2
 
 
 print(f3(1, 2))  # Should print 3
@@ -64,8 +61,8 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
-def f4(*kwargs):
-    for key, value in kwargs:
+def f4(**kwargs):
+    for key, value in kwargs.items():
         print(f"{key}: {value}")
 
 # Should print
@@ -85,4 +82,4 @@ d = {
 }
 
 # How do you have to modify the f4 call below to make this work?
-f4(d)
+f4(**d)
